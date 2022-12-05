@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #f4f5f9;
+}
+
+.bg-purple {
+  height: 50vh;
+  background-color: #6554ba;
+  clip-path: polygon(0 0, 100% 0, 100% 6%, 0 100%);
+  position: relative;
+}
+
+.infor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: -5%;
+}
+
+.avatar img {
+  width: 10.5rem;
+  height: 10.5rem;
+  border-radius: 400%;
+}
+
+.inforAuthor {
+  font-size: 35px;
+  font-weight: 800;
+  color: #3c3c3c;
+  letter-spacing: 1px;
+}
+
+.infor_content {
+  color: #d2d3d4;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.socialList {
+  margin: 0px auto;
+}
+
+.social_facebook {
+  display: flex;
+  align-items: center;
+}
+
+.social_icon {
+  font-size: 50px;
+  margin-right: 20px;
+  color: #0202ad;
+}
+
+.social_infor {
+  display: flex;
+  flex-direction: column;
+}
+
+.social_infor h1 {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.social_infor span {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #d2d3d4;
+}
+
+.social_twitter {
+  display: flex;
+  align-items: center;
+}
+
+.social_icon .fa-twitter-square {
+  color: #4ec1f2;
+}
+
+.social_youtube {
+  display: flex;
+  align-items: center;
+}
+
+.social_icon .fa-youtube-square {
+  color: #f50606;
+}
+/* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
+
+.social_instagram {
+  display: flex;
+  align-items: center;
+}
+
+.social_icon .fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: #fff;
+  border-radius: 6px;
+  padding: 2px;
+  font-size: 46px;
+}
+
+/* reponsive tablet  */
+
+@media only screen and (max-width: 768px) {
+  .infor {
+    top: 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bg-purple {
+    height: 25vh;
+  }
+  .infor {
+    top: -15%;
+  }
+}
